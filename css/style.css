@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-/* vana */
 html {
   box-sizing: border-box;
 }
@@ -10,35 +10,66 @@ html {
    box-sizing: inherit;
 }
 body {
-    font-family:Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
     line-height: 1.4em;
-    color: #333333;
+    color: #999999;
 }
-/* h1 {
-    font-family:'Playfair Display', serif;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0px;
-    color: #333;
-    font-size: 36px;
-} */
+h1 {
+  
+  font-size: 50px;
+  font-weight: 700;
+  padding: 50px 0px 0px 20px;
+  margin-top: 0px
+}
+h2 {
+  
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px 20px 8px 20px;
+}
+h3 {
+  
+  font-size: 32px;
+  font-weight: 400;
+  padding: 10px 20px 8px 20px;
+}
+h4 {
+  
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px 20px 8px 20px;
+  line-height: 3;
+  color: #999999;
+}
+h5 {
+  
+  font-size: 20px;
+  font-weight: 400; 
+  padding: 5px 20px 5px 20px;
+  line-height: 1.4;
+  color: #999999
+}
+h6 {
+  
+  font-size: 16px;
+  font-weight: 400; 
+  padding: 5px 20px 5px 20px;
+  color: #999999
+}
 p {
-  font-family: 'Inconsolata', monospace;
-    padding: 0px;
-    color: #333;
+  
+  font-size: 16px;
+  padding: 5px 20px 5px 20px;
+  color: #999999;
 }
-/* .sisutekst {
-    font-family:'Playfair Display', serif;
-    padding: 0px 170px;
-    color: #333;
-} */
+
+
 .container{
     max-width: 1200px;
     height: auto;
     margin: auto;
-  
 }
+
 .p2 {
     padding: 20px;
 
@@ -65,10 +96,14 @@ p {
 }
 .header > .main-nav > a {
     margin: 30px;
-    color: #222222;
+    /* color: #333333; */
+    color: #999999;
     text-decoration: none;
-    font-size: 1.3em;
-    font-family:Karla', sans-serif;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
   
 }
 
@@ -80,7 +115,7 @@ p {
     grid-gap: 15px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(220px, auto);
-    padding: 80px 0;
+    padding: 70px 0px 30px;
    
 }
 .grid-item {
@@ -131,7 +166,8 @@ p {
   }
   
   body {
-    margin: 0; font-family:Karla', sans-serif;
+    margin: 0; 
+    font-family: 'Open Sans', sans-serif;
   }
   
   .wrapper {
@@ -140,7 +176,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-  } */
+  } 
   
   /* gallery */
   
@@ -269,14 +305,14 @@ p {
 .footer {
     justify-content: center;
     background: transparent;
-    font-family: 'Inconsolata', monospace;
-    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     display: flex;
     padding: 20px 0;
 }
 .footer a{
   text-decoration: none;
-  color: #333;
+  color:#999999;
 }
 
 /* kontakt */
