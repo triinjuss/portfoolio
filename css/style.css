@@ -63,6 +63,12 @@ p {
   color: #999999;
 }
 
+ul{
+  font-size: 16px;
+  padding: 5px 20px 5px 20px;
+  color: #999999;
+}
+
 
 .container{
     max-width: 1200px;
