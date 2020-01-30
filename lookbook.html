@@ -9,35 +9,26 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    .header > .logo {
-    width: 30%;
-    margin-left: 20px;
-    margin-bottom: -18px;
-    z-index: 2;
-  }
-  
-  h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 32px;
-  font-weight: 600;
-  padding: 10px 20px 8px 20px;
-  color: #333333;
-}
-  h2
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 32px;
+      font-weight: 600;
+      padding: 10px 20px 8px 20px;
+      color: #333333;
+    }
 
-  {
-  font-size: 16px;
-  padding: 5px 20px 5px 20px;
-  
-  color: #999999;
-}
-p
+    h2 {
+      font-size: 16px;
+      padding: 5px 20px 5px 20px;
 
-{
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
+      color: #999999;
+    }
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
 
     .grid {
       width: 100%;
@@ -49,10 +40,6 @@ p
 
     }
 
-    .grid-item {
-      /* background-color: #F8F8F8; */
-    }
-
     .grid-item img {
       width: 100%;
       display: block;
@@ -61,66 +48,87 @@ p
 
     .grid-item {
       width: 100%;
-      
+
     }
 
+    @media (max-width: 768px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
 
+    @media (max-width: 400px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 
 </head>
 
 <body>
   <div class="container">
-    <header class="header flex p2">
-      <div class="logo">
-        <img src="css/img/tjlogo.svg" alt="logo">
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Avaleht</a>
-        <a href="minust.html">Minust</a>
-        <!-- <a href="gallerii.html">Galerii</a> -->
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
+    <header class="header">
+      <a href="/" class="logo"> <img src="css/img/tjlogo.svg" alt="logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Avaleht</a></li>
+        <li><a href="minust.html">Minust</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
     </header>
+  </div>
 
-  
+  <div class="grid">
+    <div class="grid-item">
+      <div class="grid-item">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1574942565/Portfoolio/Lookbook/lookbook_jap_10_fhj7qk.jpg"
+          data-lightbox-title="Visiitkaardid">
+          <img
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1574942565/Portfoolio/Lookbook/lookbook_jap_10_fhj7qk.jpg" /></a>
+      </div>
+    </div>
 
-    <div class="grid">
-      <div class="grid-item">
-        <div class="grid-item">
-          <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1574942565/Portfoolio/Lookbook/lookbook_jap_10_fhj7qk.jpg" data-lightbox-title="Visiitkaardid">
-          <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1574942565/Portfoolio/Lookbook/lookbook_jap_10_fhj7qk.jpg" /></a></div>
-          </div>  
-            
-      <div class="grid-item">
-        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1574934429/Portfoolio/Lookbook/lookbook_jap_5_surier.jpg" data-lightbox-title="Visiitkaardid">
-          <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1574934429/Portfoolio/Lookbook/lookbook_jap_5_surier.jpg" /></a></div>
-      <div class="grid-item">
-        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575025424/Portfoolio/Lookbook/lookbook_jap_18_aa4hpb.jpg" data-lightbox-title="Visiitkaardid">
-          <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575025424/Portfoolio/Lookbook/lookbook_jap_18_aa4hpb.jpg" /></a></div>
-    
-          <div class="grid-item">
-            <h3>Lookbook</h3> 
-            <h5>Ülesanne: kujundada inglise- ja jaapanikeelne lookbook brändile John Blund.</h5>
-            <h6>Iseseisev töö</h6>
-            <h6>Aeg: 2019 kevad </h6>
-            <p> Brändi märksõnadeks on kirglik, personaalne, põhjamaine, hell ja sõbralik.
-              John Blundi brändi alt toodetakse une – ja ärevushäireid leevendavaid tooteid ning signatuurtooteks on raskustekid.
-              Kuna ettevõte soovis osaleda sügisel kahel suurel disainimessil Soomes ja Jaapanis, siis oli neil vaja lookbooki, et läbi selle tutvustada enda brändi tooteid.
-              Lookbooki kujundamisel võtsin aluseks brändi sümboolika. Tellija sooviks oli anda edasi värsket ja puhanud emotsiooni. Kujundasin ja lisasin läbilõike raskusteki tehnilisest joonisest, et tootest oleks parem ja selgem ülevaade. 
-            </p> 
-          
-            <p><a href="deploy/lookbook3d.html" target="_blank">Interaktiivne lookbook jaapani keeles</a></p>
-          
-            <h2>Mockup: https://www.freepik.com</h2>
-            <!-- <a href="deploy/lookbook3d.html" target="_blank">3D Lookbook inglise keeles</a></p> -->
-           
-          </div>
-        </div>
+    <div class="grid-item">
+      <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1574934429/Portfoolio/Lookbook/lookbook_jap_5_surier.jpg"
+        data-lightbox-title="Visiitkaardid">
+        <img
+          src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1574934429/Portfoolio/Lookbook/lookbook_jap_5_surier.jpg" /></a>
+    </div>
+    <div class="grid-item">
+      <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575025424/Portfoolio/Lookbook/lookbook_jap_18_aa4hpb.jpg"
+        data-lightbox-title="Visiitkaardid">
+        <img
+          src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575025424/Portfoolio/Lookbook/lookbook_jap_18_aa4hpb.jpg" /></a>
+    </div>
 
+    <div class="grid-item">
+      <h3>Lookbook</h3>
+      <h5>Ülesanne: kujundada inglise- ja jaapanikeelne lookbook brändile John Blund.</h5>
+      <h6>Iseseisev töö</h6>
+      <h6>Aeg: 2019 kevad </h6>
+      <p> Brändi märksõnadeks on kirglik, personaalne, põhjamaine, hell ja sõbralik.
+        John Blundi brändi alt toodetakse une – ja ärevushäireid leevendavaid tooteid ning signatuurtooteks on
+        raskustekid.
+        Kuna ettevõte soovis osaleda sügisel kahel suurel disainimessil Soomes ja Jaapanis, siis oli neil vaja
+        lookbooki, et läbi selle tutvustada enda brändi tooteid.
+        Lookbooki kujundamisel võtsin aluseks brändi sümboolika. Tellija sooviks oli anda edasi värsket ja puhanud
+        emotsiooni. Kujundasin ja lisasin läbilõike raskusteki tehnilisest joonisest, et tootest oleks parem ja selgem
+        ülevaade.
+      </p>
+
+      <p><a href="deploy/lookbook3d.html" target="_blank">Interaktiivne lookbook jaapani keeles</a></p>
+
+      <h2>Mockup: https://www.freepik.com</h2>
+      <!-- <a href="deploy/lookbook3d.html" target="_blank">3D Lookbook inglise keeles</a></p> -->
+
+    </div>
+  </div>
+
+  <footer>
     <div class="footer">
       <div>
         Email:
@@ -132,9 +140,9 @@ p
           +372 5300 1709
         </a>
       </div>
-      </footer>
-
     </div>
+  </footer>
+
 </body>
 
 </html>

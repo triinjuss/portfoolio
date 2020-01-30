@@ -7,34 +7,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Kaia Pihlak Portfoolio</title>
   <link rel="stylesheet" href="css/style.css">
- 
-  <style>
-    .header > .logo {
-    width: 30%;
-    margin-left: 20px;
-    margin-bottom: -18px;
-    z-index: 2;
-  }
-  h3 {
-  
-  font-size: 32px;
-  font-weight: 600;
-  padding: 0px 20px 0px 20px;
-  color: #333333;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-h2
 
-  {
-  font-size: 16px;
-  padding: 5px 20px 5px 20px;
-  color: #999999;
-}
-p {
+  <style>
+    h3 {
+
+      font-size: 32px;
+      font-weight: 600;
+      padding: 0px 20px 0px 20px;
+      color: #333333;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 16px;
+      padding: 5px 20px 5px 20px;
+      color: #999999;
+    }
+
+    p {
       margin-top: 10px;
       margin-bottom: 10px;
     }
+
     .grid {
       width: 100%;
       height: auto;
@@ -45,10 +40,6 @@ p {
 
     }
 
-    .grid-item {
-      /* background-color: #F8F8F8; */
-    }
-
     .grid-item img {
       width: 100%;
       display: block;
@@ -57,60 +48,78 @@ p {
 
     .grid-item {
       width: 100%;
-      
+
     }
 
+    @media (max-width: 768px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
 
+    @media (max-width: 400px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 
 </head>
 
 <body>
   <div class="container">
-    <header class="header flex p2">
-      <div class="logo">
-        <img src="css/img/tjlogo.svg" alt="logo">
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Avaleht</a>
-        <a href="minust.html">Minust</a>
-        <!-- <a href="gallerii.html">Galerii</a> -->
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
+    <header class="header">
+      <a href="/" class="logo"> <img src="css/img/tjlogo.svg" alt="logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Avaleht</a></li>
+        <li><a href="minust.html">Minust</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
     </header>
 
-  
 
     <div class="grid">
       <div class="grid-item">
-        
-          <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579701538/Portfoolio/kaialeht1_gjzsmv.png"   data-lightbox-title="Visiitkaardid">
+
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579701538/Portfoolio/kaialeht1_gjzsmv.png"
+          data-lightbox-title="Visiitkaardid">
           <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1579701538/Portfoolio/kaialeht1_gjzsmv.png" /></a></div>
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1579701538/Portfoolio/kaialeht1_gjzsmv.png" /></a>
+      </div>
 
-            <div class="grid-item">
-              <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579701987/Portfoolio/kaialeht5_efwwam.jpg" data-lightbox-title="Visiitkaardid">
-              <img
-                src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1579701987/Portfoolio/kaialeht5_efwwam.jpg" /></a></div>
+      <div class="grid-item">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579701987/Portfoolio/kaialeht5_efwwam.jpg"
+          data-lightbox-title="Visiitkaardid">
+          <img
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1579701987/Portfoolio/kaialeht5_efwwam.jpg" /></a>
+      </div>
 
-            <div class="grid-item">
-              <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579804245/Portfoolio/Screen_Shot_2020-01-23_at_8.29.14_PM_yb8axi.png" data-lightbox-title="Visiitkaardid">
-              <img
-                src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1579804245/Portfoolio/Screen_Shot_2020-01-23_at_8.29.14_PM_yb8axi.png"  /></a></div>
+      <div class="grid-item">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579804245/Portfoolio/Screen_Shot_2020-01-23_at_8.29.14_PM_yb8axi.png"
+          data-lightbox-title="Visiitkaardid">
+          <img
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/bo_2px_solid_rgb:d1d1d1/v1579804245/Portfoolio/Screen_Shot_2020-01-23_at_8.29.14_PM_yb8axi.png" /></a>
+      </div>
 
-                <div class="grid-item">
-                  <h3>Veebileht</h3> 
-                  <h4>Kaia Pihlak Portfoolio</h4> 
-                  <h5>Ülesanne: grimmikunstnik Kaia Pihlakule veebilehe loomine</h5>
-                  <h6>Iseseisev töö</h6>
-                  <h6>Aeg: 2020 jaanuar </h6>
-                  <p>Kaia Pihlaku soov oli saada endale veebileht, kuhu on lisatud läbi aastate tema parimad tööd erinevatest žanritest. Veebiloome platvormiks valisime WordPressi, et klient saaks seda hiljem iseseisvalt täiendada. </p>
-                  <!-- <p><a href="#" target="_blank">Kaia Pihlak Portfoolio</a></p> -->
-                    <h2>Mockup: https://www.freepik.com</h2>
-                  </div> 
-    
-        </div>
-      </div> 
+      <div class="grid-item">
+        <h3>Veebileht</h3>
+        <h4>Kaia Pihlak Portfoolio</h4>
+        <h5>Ülesanne: grimmikunstnik Kaia Pihlakule veebilehe loomine</h5>
+        <h6>Iseseisev töö</h6>
+        <h6>Aeg: 2020 jaanuar </h6>
+        <p>Kaia Pihlaku soov oli saada endale veebileht, kuhu on lisatud läbi aastate tema parimad tööd erinevatest
+          žanritest. Veebiloome platvormiks valisime WordPressi, et klient saaks seda hiljem iseseisvalt täiendada. </p>
+        <!-- <p><a href="#" target="_blank">Kaia Pihlak Portfoolio</a></p> -->
+        <h2>Mockup: https://www.freepik.com</h2>
+      </div>
+
+    </div>
+  </div>
+  <footer>
     <div class="footer">
       <div>
         Email:
@@ -122,9 +131,8 @@ p {
           +372 5300 1709
         </a>
       </div>
-      </footer>
-
     </div>
+  </footer>
 </body>
 
 </html>

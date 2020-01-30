@@ -8,38 +8,24 @@
   <title>Visiitkaardid</title>
   <link rel="stylesheet" href="css/style.css">
 
-  
- 
+
+
   <style>
-   
-    .header > .logo {
-    width: 30%;
-    margin-left: 20px;
-    margin-bottom: -18px;
-    z-index: 2;
-  }
+    h3 {
 
-  h2 {
+      font-size: 32px;
+      font-weight: 600;
+      padding: 10px 20px 8px 20px;
+      color: #333333;
+    }
 
-font-size: 16px;
-padding: 5px 20px 5px 20px;
-color: #999999;
-}
-  
-h3 {
-  
-  font-size: 32px;
-  font-weight: 600;
-  padding: 10px 20px 8px 20px;
-  color: #333333;
-}
-p{
-  
- margin-bottom: 20px;
-  padding: 10px 20px 8px 20px;
-  
-}
- 
+    p {
+
+      margin-bottom: 20px;
+      padding: 10px 20px 8px 20px;
+
+    }
+
     .grid {
       width: 100%;
       height: auto;
@@ -47,10 +33,6 @@ p{
       grid-gap: 15px;
       grid-template-columns: repeat(2, 1fr);
       grid-auto-rows: minmax(220px, auto);
-    }
-
-    .grid-item {
-      /* background-color: #F8F8F8; */
     }
 
     .grid-item img {
@@ -62,68 +44,91 @@ p{
     .grid-item {
       width: 100%;
     }
-    
 
+    @media (max-width: 768px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 
 </head>
 
 <body>
   <div class="container">
-    <header class="header flex p2">
-      <div class="logo">
-        <img src="css/img/tjlogo.svg" alt="logo">
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Avaleht</a>
-        <a href="minust.html">Minust</a>
-        <!-- <a href="gallerii.html">Galerii</a> -->
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
+    <header class="header">
+      <a href="/" class="logo"> <img src="css/img/tjlogo.svg" alt="logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Avaleht</a></li>
+        <li><a href="minust.html">Minust</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
     </header>
 
     <div class="grid">
       <div class="grid-item">
-        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579272191/Portfoolio/visitkad-karbis_sseqfn.jpg" data-lightbox-title="Visiitkaardid">
-        <img
-          src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579272191/Portfoolio/visitkad-karbis_sseqfn.jpg" /></a></div>
-      
-      <div class="grid-item">
-        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1576312485/Portfoolio/visiitkaart_keith1200_khiwzo.jpg" data-lightbox-title="Visiitkaardid">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579272191/Portfoolio/visitkad-karbis_sseqfn.jpg"
+          data-lightbox-title="Visiitkaardid">
           <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1576312485/Portfoolio/visiitkaart_keith1200_khiwzo.jpg" /></a></div>
-      <div class="grid-item">
-        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1578831780/Portfoolio/visitkadlaual_uo4xlx.jpg" data-lightbox-title="Visiitkaardid">
-          <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1578831780/Portfoolio/visitkadlaual_uo4xlx.jpg" /></a></div>
-          <div class="grid-item">
-            &nbsp;
-            <h3>Visiitkaardid</h3> 
-            &nbsp;
-            <h5>Ülesanne: luua John Blund brändile visiitkaardid</h5>
-            <h6>Juhendaja: Erik Riige</h6>
-            <h6>Aeg: 2019 kevad </h6>
-            <p>John Blund (rootsi keeles Une-Mati ) on põhjamaine bränd, mis mõjub nagu suure ja sõbraliku hiiglase kaisutus.
-              Oma kujunduses rõhutasin brändi logo, mis on ühtlasi ka läbiv karakter brändingus.  Ta on suur, mänguline, krutskeid täis hiiglane, kellele meeldib kallistada. Taustaks kasutasin tumesinist värvi, mis sümboliseerib ööd ja tekstides roosat värvi. Tellija sooviks oli, et visiitkaardi tagumisel küljel domineeriks kodulehe aadress.</p>
-             
-              <h2>Mockup: www.freepik.com</h2> 
-          </div>
-    </div>
-
-    <div class="footer">
-      <div>
-        Email:
-        <a href="mailto:triinjuss@icloud.com">
-          triinjuss@icloud.com
-        </a>
-        &nbsp;&nbsp; Phone:
-        <a href="tel:+37253001709">
-          +372 5300 1709
-        </a>
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579272191/Portfoolio/visitkad-karbis_sseqfn.jpg" /></a>
       </div>
-      </footer>
 
+      <div class="grid-item">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1576312485/Portfoolio/visiitkaart_keith1200_khiwzo.jpg"
+          data-lightbox-title="Visiitkaardid">
+          <img
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1576312485/Portfoolio/visiitkaart_keith1200_khiwzo.jpg" /></a>
+      </div>
+      <div class="grid-item">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1578831780/Portfoolio/visitkadlaual_uo4xlx.jpg"
+          data-lightbox-title="Visiitkaardid">
+          <img
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1578831780/Portfoolio/visitkadlaual_uo4xlx.jpg" /></a>
+      </div>
+      <div class="grid-item">
+        &nbsp;
+        <h3>Visiitkaardid</h3>
+        &nbsp;
+        <h5>Ülesanne: luua John Blund brändile visiitkaardid</h5>
+        <h6>Juhendaja: Erik Riige</h6>
+        <h6>Aeg: 2019 kevad </h6>
+        <p>John Blund (rootsi keeles Une-Mati ) on põhjamaine bränd, mis mõjub nagu suure ja sõbraliku hiiglase
+          kaisutus.
+          Oma kujunduses rõhutasin brändi logo, mis on ühtlasi ka läbiv karakter brändingus. Ta on suur, mänguline,
+          krutskeid täis hiiglane, kellele meeldib kallistada. Taustaks kasutasin tumesinist värvi, mis sümboliseerib
+          ööd ja tekstides roosat värvi. Tellija sooviks oli, et visiitkaardi tagumisel küljel domineeriks kodulehe
+          aadress.</p>
+
+        <p3>Mockup: www.freepik.com</p3>
+      </div>
     </div>
+
+    <footer>
+      <div class="footer">
+        <div>
+          Email:
+          <a href="mailto:triinjuss@icloud.com">
+            triinjuss@icloud.com
+          </a>
+          &nbsp;&nbsp; Phone:
+          <a href="tel:+37253001709">
+            +372 5300 1709
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
 </body>
 
 </html>

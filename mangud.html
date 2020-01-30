@@ -9,32 +9,27 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    .header > .logo {
-    width: 30%;
-    margin-left: 20px;
-    margin-bottom: -18px;
-    z-index: 2;
-  }
-  h2
+    h2 {
+      font-size: 16px;
+      padding: 5px 20px 5px 20px;
+      color: #999999;
+    }
 
-  {
-  font-size: 16px;
-  padding: 5px 20px 5px 20px;
-  color: #999999;
-}
-  h3 {
-  
-  font-size: 32px;
-  font-weight: 600;
-  padding: 10px 20px 8px 20px;
-  color: #333333;
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-p {
+    h3 {
+
+      font-size: 32px;
+      font-weight: 600;
+      padding: 10px 20px 8px 20px;
+      color: #333333;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    p {
       margin-top: 8px;
       margin-bottom: 8px;
     }
+
     .grid {
       width: 100%;
       height: auto;
@@ -45,10 +40,6 @@ p {
 
     }
 
-    .grid-item {
-      /* background-color: #F8F8F8; */
-    }
-
     .grid-item img {
       width: 100%;
       display: block;
@@ -57,71 +48,84 @@ p {
 
     .grid-item {
       width: 100%;
-      
+
     }
 
+    @media (max-width: 768px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
 
-
+    @media (max-width: 400px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 
 </head>
 
 <body>
   <div class="container">
-    <header class="header flex p2">
-      <div class="logo">
-        <img src="css/img/tjlogo.svg" alt="logo">
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Avaleht</a>
-        <a href="minust.html">Minust</a>
-        <!-- <a href="gallerii.html">Galerii</a> -->
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
+    <header class="header">
+      <a href="/" class="logo"> <img src="css/img/tjlogo.svg" alt="logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Avaleht</a></li>
+        <li><a href="minust.html">Minust</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
     </header>
-
-  
 
     <div class="grid">
       <div class="grid-item">
         <video width="600" height="400" autoplay loop>
           <source src="movie.mp4" type="video/mp4">
-          <source src="https://res.cloudinary.com/dv0gnzc0l/video/upload/bo_2px_solid_rgb:d1d1d1/v1579953129/Portfoolio/dunuts_xdlkyd.mp4" type="video/ogg">
+          <source
+            src="https://res.cloudinary.com/dv0gnzc0l/video/upload/bo_2px_solid_rgb:d1d1d1/v1579953129/Portfoolio/dunuts_xdlkyd.mp4"
+            type="video/ogg">
         </video>
-        
-      
-      </div>  
-      <div class="grid-item">
-       
-          <h3>Mängud</h3> 
-       
-          <h4>Ülesanne: mängu tegemine Unity programmiga</h4>
-          <h6>Iseseisev töö</h6>
-          <h6>Aeg: 2019 suvi </h6>
-          <p> Mäng Hungry Games on lihtsa kontseptsiooniga mäng - kirss tuleb kogu aeg hoida mängus ilma et see maha kukuks. Iseenesest on mäng lihtne. Mängul on 2 levelit. Ka mängu detailid on autori looming. Koodi osa kirjutasin koos Oliver Jussiga.
-            <!-- <iframe frameborder="0" src="https://itch.io/embed/456947" width="552" height="167"><a href="https://triinjuss.itch.io/hunger-breaker">Hunger Breaker by triinjuss</a></iframe> -->
-           
-            <p><a href="https://triinjuss.itch.io/hunger-breaker" target="_blank">Hunger breaker mäng</a></p>
-            
-              <h2>Mockup: https://www.freepik.com</h2>
-  
-        </div>  
-                   
-        <div class="grid-item">
-          
-          <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579119931/Portfoolio/play_cpvfsu.jpg" data-lightbox-title="Mangud">
-          <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579119931/Portfoolio/play_cpvfsu.jpg" /></a></div>
-        
-            
-      <div class="grid-item">
-        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579119931/Portfoolio/win_ethigc.jpg" data-lightbox-title="Mangud">
-          <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579119931/Portfoolio/win_ethigc.jpg" /></a></div>
-  
-          </div>
-        </div>
 
+      </div>
+      <div class="grid-item">
+
+        <h3>Mängud</h3>
+
+        <h4>Ülesanne: mängu tegemine Unity programmiga</h4>
+        <h6>Iseseisev töö</h6>
+        <h6>Aeg: 2019 suvi </h6>
+        <p> Mäng Hungry Games on lihtsa kontseptsiooniga mäng - kirss tuleb kogu aeg hoida mängus ilma et see maha
+          kukuks. Iseenesest on mäng lihtne. Mängul on 2 levelit. Ka mängu detailid on autori looming. Koodi osa
+          kirjutasin koos Oliver Jussiga.</p>
+        <!-- <iframe frameborder="0" src="https://itch.io/embed/456947" width="552" height="167"><a href="https://triinjuss.itch.io/hunger-breaker">Hunger Breaker by triinjuss</a></iframe> -->
+
+        <p><a href="https://triinjuss.itch.io/hunger-breaker" target="_blank">Hunger breaker mäng</a></p>
+
+        <h2>Mockup: https://www.freepik.com</h2>
+
+      </div>
+
+      <div class="grid-item">
+
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579119931/Portfoolio/play_cpvfsu.jpg"
+          data-lightbox-title="Mangud">
+          <img src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579119931/Portfoolio/play_cpvfsu.jpg" /></a>
+      </div>
+
+      <div class="grid-item">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579119931/Portfoolio/win_ethigc.jpg"
+          data-lightbox-title="Mangud">
+          <img src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579119931/Portfoolio/win_ethigc.jpg" /></a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
     <div class="footer">
       <div>
         Email:
@@ -133,9 +137,10 @@ p {
           +372 5300 1709
         </a>
       </div>
-      </footer>
-
     </div>
+  </footer>
+
+
 </body>
 
 </html>

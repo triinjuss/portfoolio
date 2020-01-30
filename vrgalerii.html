@@ -8,47 +8,42 @@
   <title>Virtuaalne galerii</title>
   <link rel="stylesheet" href="css/style.css">
 
- 
-  <style>
 
-    .header > .logo {
+  <style>
+    /* .header > .logo {
     width: 30%;
     margin-left: 20px;
     margin-bottom: -18px;
     z-index: 2;
-  }
-  h2 {
+  } */
 
-  font-size: 16px;
-  padding: 5px 20px 5px 20px;
-  color: #999999;
-}
-  
-  h3 {
-  
-  font-size: 32px;
-  font-weight: 600;
-  padding: 20px 20px 8px 20px;
-  color: #333333;
-}
-h5 {
-  
-  
-  padding: 8px 20px 5px 20px;
- 
-}
-h6 {
-  
-  
-  padding: 10px 20px 0px 20px;
+    h3 {
 
-}
-p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+      font-size: 32px;
+      font-weight: 600;
+      padding: 40px 20px 8px 20px;
+      color: #333333;
+    }
+
+    h5 {
 
 
-}
+      padding: 8px 20px 5px 20px;
+
+    }
+
+    h6 {
+
+
+      padding: 10px 20px 0px 20px;
+
+    }
+
+    p {
+      margin-top: 20px;
+      padding: 10px 20px 30px 20px;
+
+    }
 
     .grid {
       width: 100%;
@@ -60,10 +55,6 @@ p {
 
     }
 
-    .grid-item {
-      /* background-color: #F8F8F8; */
-    }
-
     .grid-item img {
       width: 100%;
       display: block;
@@ -72,15 +63,27 @@ p {
 
     .grid-item {
       width: 100%;
-      
+
     }
 
+    @media (max-width: 768px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
 
+    @media (max-width: 400px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 
 </head>
 
-<body>
+<!-- <body>
   <div class="container">
     <header class="header flex p2">
       <div class="logo">
@@ -88,67 +91,85 @@ p {
       </div>
       <nav class="main-nav">
         <a href="index.html">Avaleht</a>
-        <a href="minust.html">Minust</a>
-        <!-- <a href="gallerii.html">Galerii</a> -->
-        <a href="kontakt.html">Kontakt</a>
+        <a href="minust.html">Minust</a> -->
+<!-- <a href="gallerii.html">Galerii</a> -->
+<!-- <a href="kontakt.html">Kontakt</a>
       </nav>
-    </header>
+    </header> -->
 
-  
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="/" class="logo"> <img src="css/img/tjlogo.svg" alt="logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Avaleht</a></li>
+        <li><a href="minust.html">Minust</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </header>
 
     <div class="grid">
       <div class="grid-item">
         <div class="grid-item">
-          <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579716197/Portfoolio/Screen_Shot_2020-01-22_at_7.58.25_PM_riwe42.png" data-lightbox-title="Visiitkaardid">
-          <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579716197/Portfoolio/Screen_Shot_2020-01-22_at_7.58.25_PM_riwe42.png" /></a></div>
-          </div> 
-          <div class="grid-item">
-            <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579716214/Portfoolio/Screen_Shot_2020-01-22_at_6.26.37_PM_ikwijg.png" data-lightbox-title="Visiitkaardid">
+          <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579716197/Portfoolio/Screen_Shot_2020-01-22_at_7.58.25_PM_riwe42.png"
+            data-lightbox-title="Visiitkaardid">
             <img
-              src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579716214/Portfoolio/Screen_Shot_2020-01-22_at_6.26.37_PM_ikwijg.png" /></a></div>
-          
-            <div class="grid-item">
-              <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579715800/Portfoolio/Screen_Shot_2020-01-22_at_6.27.15_PM_i0qb92.png" data-lightbox-title="Visiitkaardid">
-              <img
-                src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579715800/Portfoolio/Screen_Shot_2020-01-22_at_6.27.15_PM_i0qb92.png" /></a></div>
-               
-    
-          <div class="grid-item">
-           
-            <h3>Virtuaalne galerii</h3> 
-            &nbsp;
-            <h5>Life is Creation</h5> 
-            &nbsp;
-            <h5>Ülesanne: kujundada virtuaalne galerii enda kunstiteostest</h5>
-            &nbsp;
-            <h6>Juhendaja: Madis Vaher</h6>
-            <h6>Aeg: 2020 jaanuar</h6>
-          
-          <p>Enda virtuaalsesse galeriisse olen kokku pannud näituse kolme aasta jooksul valminud erinevatest kunstiteostest.
-          Galerii olen viinud loodusesse, et vaatajal oleks võimalus peale kunsti nautimese teha ka mõnus jalutuskäik metsaradadel.</p>
-
-          <p><a href=" https://triinjuss.github.io/triinugalerii/" target="_blank">Interaktiivne galerii</a></p>
-            
-
-              <h2>Mockup: https://www.freepik.com</h2>
-          </div>
+              src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579716197/Portfoolio/Screen_Shot_2020-01-22_at_7.58.25_PM_riwe42.png" /></a>
         </div>
-
-    <div class="footer">
-      <div>
-        Email:
-        <a href="mailto:triinjuss@icloud.com">
-          triinjuss@icloud.com
-        </a>
-        &nbsp;&nbsp; Phone:
-        <a href="tel:+37253001709">
-          +372 5300 1709
-        </a>
       </div>
-      </footer>
+      <div class="grid-item">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579716214/Portfoolio/Screen_Shot_2020-01-22_at_6.26.37_PM_ikwijg.png"
+          data-lightbox-title="Visiitkaardid">
+          <img
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579716214/Portfoolio/Screen_Shot_2020-01-22_at_6.26.37_PM_ikwijg.png" /></a>
+      </div>
 
+      <div class="grid-item">
+        <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579715800/Portfoolio/Screen_Shot_2020-01-22_at_6.27.15_PM_i0qb92.png"
+          data-lightbox-title="Visiitkaardid">
+          <img
+            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1579715800/Portfoolio/Screen_Shot_2020-01-22_at_6.27.15_PM_i0qb92.png" /></a>
+      </div>
+
+
+      <div class="grid-item">
+
+        <h3>Virtuaalne galerii</h3>
+        &nbsp;
+        <h5>Life is Creation</h5>
+        &nbsp;
+        <h5>Ülesanne: kujundada virtuaalne galerii enda kunstiteostest</h5>
+        &nbsp;
+        <h6>Juhendaja: Madis Vaher</h6>
+        <h6>Aeg: 2020 jaanuar</h6>
+
+        <p>Enda virtuaalsesse galeriisse olen kokku pannud näituse kolme aasta jooksul valminud erinevatest
+          kunstiteostest. </p>
+        <!-- <p> Galerii olen viinud loodusesse, et vaatajal oleks võimalus peale kunsti nautimese teha ka mõnus jalutuskäik metsaradadel. </p> -->
+        <p><a href=" https://triinjuss.github.io/triinutuba/" target="_blank">Interaktiivne galerii</a></p>
+
+
+        <p3>Mockup: https://www.freepik.com</p3>
+      </div>
     </div>
+    <footer>
+      <div class="footer">
+        <div>
+          Email:
+          <a href="mailto:triinjuss@icloud.com">
+            triinjuss@icloud.com
+          </a>
+          &nbsp;&nbsp; Phone:
+          <a href="tel:+37253001709">
+            +372 5300 1709
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
 </body>
 
 </html>

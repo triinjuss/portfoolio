@@ -9,17 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 
-
- 
   <style>
-     .header > .logo {
-    width: 30%;
-    margin-left: 20px;
-    margin-bottom: -18px;
-    z-index: 2;
-  }
-
-  .grid {
+    .grid {
       width: 100%;
       height: auto;
       display: grid;
@@ -27,10 +18,6 @@
       grid-template-columns: repeat(2, 1fr);
       grid-auto-rows: minmax(220px, auto);
 
-    }
-
-    .grid-item {
-      /* background-color: #F8F8F8; */
     }
 
     .grid-item img {
@@ -41,90 +28,99 @@
 
     .grid-item {
       width: 100%;
-      
     }
 
-h4 {
-  font-family: 'La Belle Aurore', cursive;
-  font-size: 30px;
-  font-weight: 400;
- 
+    h4 {
+      font-family: 'La Belle Aurore', cursive;
+      font-size: 30px;
+      font-weight: 400;
+    }
 
-}
-h5 {
-  
-  margin-top: 5px;
-  margin-bottom: 30px;
-  padding: 8px 20px 5px 20px;
- 
-}
+    h5 {
 
-p {
-  margin-top: 5px;
-  padding: 10px 20px 2px 20px;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      padding: 8px 20px 5px 20px;
 
-}
+    }
 
+    p {
+      margin-top: 5px;
+      padding: 10px 20px 2px 20px;
+
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .grid {
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 
 </head>
 
 <body>
   <div class="container">
-    <header class="header flex p2">
-      <div class="logo">
-        <img src="css/img/tjlogo.svg" alt="logo">
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Avaleht</a>
-        <a href="minust.html">Minust</a>
-        <!-- <a href="gallerii.html">Galerii</a> -->
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
+    <header class="header">
+      <a href="/" class="logo"> <img src="css/img/tjlogo.svg" alt="logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Avaleht</a></li>
+        <li><a href="minust.html">Minust</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
     </header>
-
-  
 
     <div class="grid">
       <div class="grid-item">
         <div class="grid-item">
-         
-          <img
-            src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1580067243/Portfoolio/Triin_2_usm3hv.jpg" alt=""></a></div>
-          </div>  
-    
-          <div class="grid-item">
-            
-            <h5> Hei, olen Triin Juss.</h5> 
-            
-            <p>Olen avatud, positiivne, empaatiline, suur suhtleja. Innustun ägedatest ideedest, diskussioonidest ja aruteludest. Olen veendunud optimist - kõik on võimalik!   </p> 
-              
-            <p>Püüdlen alati kõrguste poole ja olen uudishimulik. Olen ambitsioonikas, kohusetundlik ja hindan täpsust.  </p> 
-            <p> Meeldib tootedisain ja teenuste arendamine. </p> 
-              <p> Minu eeskujuks on tootedisainer Veiko Liis, kelle tööd on lihtsad ja suurepärased. </p> 
-                <p> Liimin, kleebin, õmblen ja naudin käelisi tegevusi. Uute toodete loomiseks kogun inspiratsiooni matkates ja reisides. </p> 
-          </p> 
-          &nbsp;
-          &nbsp;
-            <h4>Triin Juss</h4>
-           
-          </div>
-        </div>
-
-    <div class="footer">
-      <div>
-        Email:
-        <a href="mailto:triinjuss@icloud.com">
-          triinjuss@icloud.com
-        </a>
-        &nbsp;&nbsp; Phone:
-        <a href="tel:+37253001709">
-          +372 5300 1709
-        </a>
+          <a href="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1580411888/Portfoolio/veb_Triin_3_zyhjb5.jpg"
+            data-lightbox-title="Minust">
+            <img src="https://res.cloudinary.com/dv0gnzc0l/image/upload/v1580411888/Portfoolio/veb_Triin_3_zyhjb5.jpg"
+              alt=""></a></div>
       </div>
-      </footer>
 
+      <div class="grid-item">
+
+        <h5> Hei, olen Triin Juss.</h5>
+
+        <p>Olen avatud, positiivne, empaatiline, suur suhtleja. Innustun ägedatest ideedest, diskussioonidest ja
+          aruteludest. Olen veendunud optimist - kõik on võimalik!</p>
+        <p>Püüdlen alati kõrguste poole ja olen uudishimulik. Olen ambitsioonikas, kohusetundlik ja hindan täpsust. </p>
+        <p> Meeldib tootedisain ja teenuste arendamine. </p>
+        <p> Minu eeskujuks on tootedisainer Veiko Liis, kelle tööd on lihtsad ja suurepärased. </p>
+        <p> Liimin, kleebin, õmblen ja naudin käelisi tegevusi. Uute toodete loomiseks kogun inspiratsiooni matkates ja
+          reisides. </p>
+        <h4>Triin Juss</h4>
+
+      </div>
     </div>
+
+    <footer>
+      <div class="footer">
+        <div>
+          Email:
+          <a href="mailto:triinjuss@icloud.com">
+            triinjuss@icloud.com
+          </a>
+          &nbsp;&nbsp; Phone:
+          <a href="tel:+37253001709">
+            +372 5300 1709
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
 </body>
 
 </html>
