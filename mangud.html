@@ -58,15 +58,15 @@
       }
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 400px) {
       .grid {
         display: block;
         grid-template-columns: 1fr;
       }
       .video {
-        
-        width: 375px;
-        height: 200px;
+   width:100%;
+   max-width:400px;
+   height:auto;
       }
   }
   </style>
@@ -88,6 +88,7 @@
 
     <div class="grid">
       <div class="grid-item">
+        <div class="video"
       
           <source src="parrots-small.mp4" type="video/mp4" media="all and (max-width:375px)">
             <source src="parrots-small.webm" type="video/webm" media="all and (max-width:375px)">
@@ -105,7 +106,7 @@
               type="video/mp4">
        
         </video>
-      
+      </div>
       </div>
       <div class="grid-item">
 
